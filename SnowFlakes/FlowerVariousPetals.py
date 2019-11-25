@@ -1,5 +1,4 @@
 from turtle import Turtle, Screen
-from random import randint
 
 window = Screen()
 window.bgcolor("black")
@@ -22,13 +21,12 @@ def DrawFlower(nPetals):
     elsa.penup()
         
 elsa.setpos(0,0)
-DrawFlower(randint(1,25))
+DrawFlower(5)
 elsa.setpos(-150,-150)
-DrawFlower(randint(1,25))
+DrawFlower(7)
 elsa.setpos(150,-150)
-DrawFlower(randint(1,25))
+DrawFlower(12)
 elsa.setpos(-150,150)
-DrawFlower(randint(1,25))
+DrawFlower(20)
 elsa.setpos(150,150)
-DrawFlower(randint(1,25))
-       
+DrawFlower(16)   
