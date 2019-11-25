@@ -6,8 +6,6 @@ window.bgcolor("black")
 elsa = Turtle()
 elsa.speed("fastest")
 elsa.pencolor("White")
-elsa.fillcolor("White")
-elsa.penup()
 
 def DrawFlower():
     elsa.pendown()
