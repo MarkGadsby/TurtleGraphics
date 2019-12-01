@@ -1,4 +1,5 @@
 from turtle import Turtle, Screen
+from random import randint
 
 window = Screen()
 window.bgcolor("black")
@@ -30,9 +31,17 @@ def branch():
     elsa.forward(35)
     splay()
     elsa.backward(70)
-    
-elsa.setpos(100,100)
 
-for i in range(8):
-    branch()
-    elsa.left(360/8)
+def DrawSnowflake():
+    numberOfBranches = randint(4,30)
+    for i in range(numberOfBranches):
+        branch()
+        elsa.left(360/numberOfBranches)    
+
+elsa.setpos(150,150)
+DrawSnowflake()
+elsa.setpos(-100,-100)
+DrawSnowflake()
+
+
+
